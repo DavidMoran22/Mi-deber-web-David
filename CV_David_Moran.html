@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera página</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #dbe9f4, #f3f9fd);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3f83f8;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        details {
+            background-color: #f2f6ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #2c3e50;
+        }
+
+        ul, ol {
+            margin-top: 10px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        em {
+            color: #5a2aa5;
+        }
+
+        img {
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        audio, video {
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .datos-personales {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .info-texto {
+            font-size: 16px;
+            line-height: 1.7;
+            flex: 1;
+        }
+
+        .info-texto p {
+            margin: 6px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>📄 HOJA DE VIDA</header>
+
+<main>
+
+    <!-- Datos personales -->
+    <section>
+        <div class="datos-personales">
+            <img src="FOTO_DAVID.jpeg" alt="Foto de David" width="200" height="200">
+            <div class="info-texto">
+                <p><strong>👤 Nombres:</strong> <em>David Hernán</em></p>
+                <p><strong>👥 Apellidos:</strong> <em>Morán Holguín</em></p>
+                <p><strong>🆔 Cédula:</strong> <em>0982578405</em></p>
+                <p><strong>🎂 Edad:</strong> <em>38</em></p>
+                <p><strong>📅 Fecha de nacimiento:</strong> <em>10 de marzo de 1987</em></p>
+                <p><strong>📍 Lugar de nacimiento:</strong> <em>Guayaquil</em></p>
+                <p><strong>🌎 Nacionalidad:</strong> <em>Ecuatoriano</em></p>
+                <p><strong>🏠 Dirección:</strong> <em>Pedro Carbo</em></p>
+                <p><strong>📞 Teléfono:</strong> <em>0982578405</em></p>
+                <p><strong>✉️ Correo electrónico:</strong> <em>davidmoran19875@gmail.com</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estudios Realizados -->
+    <section>
+        <details>
+            <summary>🎓 Estudios Realizados</summary>
+            <ul>
+                <li>Escuela Amarilis Fuente Alcívar</li>
+                <li>Colegio Dr. Eduardo Granja Garcés</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- Cursos Realizados -->
+    <section>
+        <details>
+            <summary>📘 Cursos Realizados</summary>
+            <ul>
+                <li>Metodología de la calidad</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- Habilidades y Destrezas -->
+    <section>
+        <details>
+            <summary>💡 Habilidades y destrezas</summary>
+            <ul>
+                <li>Jugar vóley</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section>
+        <details>
+            <summary>💼 Experiencia laboral</summary>
+            <ul>
+                <li>Control de calidad</li>
+                <li>Operario de maquinaria</li>
+                <li>Alineación y balanceo</li>
+                <li>FISA S.A (actualmente)</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- Referencia Personal -->
+    <section>
+        <details>
+            <summary>👥 Referencia personal</summary>
+            <ol type="I">
+                <li><strong>Adriana Salazar</strong> – <em>0967553429</em></li>
+            </ol>
+        </details>
+    </section>
+
+    <!-- Sección de Audio -->
+    <section>
+        <h3>🎤 ¿Que quiero ser en 5 años?</h3>
+        <audio controls>
+            <source src="DavidMoran_Audio.aac" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+    </section>
+
+    <!-- Sección de Video -->
+    <section>
+        <h3>🎥 Hobby</h3>
+        <<video width="360" height="240" controls>
+            <source src="DavidMoran_Video.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </section>
+
+<!-- Sección de Mapa -->
+<section>
+    <h3>📍 Ubicación de domicilio</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.9064202897885!2d-80.23414123499666!3d-1.8167217069241925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902daddbf4284637%3A0xeae065323c998c30!2sCant%C3%B3n%20Pedro%20Carbo!5e0!3m2!1ses-419!2sec!4v1754268978236!5m2!1ses-419!2sec" 
+        width="100%" 
+        height="300" 
+        style="border:0; border-radius: 10px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<section class="seccion-enlace">
+    <h2>🤝 Conoce a Mi Compañero</h2>
+    <p>Haz clic abajo para explorar la hoja de vida de otro colega destacado del curso.</p>
+    <a href="CV3.html">Ver Hoja de Vida de Mi Compañero</a>
+  </section>
+
+<!-- Sección de Enlaces -->
+<section>
+    <h3>🔗 Enlaces de Interés</h3>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1STSUVGcslDLt6cxVrKORuHdHUt85r2se/preview" target="_blank">Video Hobby</a></li>
+        <li><a href="https://drive.google.com/file/d/1J9ABowo-eiew8kZftRlNBjupkkqaW-hA/preview" target="_blank">Audio que quiero ser en 5 años</a></li>
+        <li><a href="https://drive.google.com/file/d/1GfpUOJB0Dh3cF1nqBA4yhXjOXXrLbxpe/preview" target="_blank">FOTO DAVID MORAN</a></li>
+    </ul>
+</section>
+
+</main>
+
+</body>
+</html>
